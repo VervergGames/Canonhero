@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour {
 
     void Dead()
     {
+        GamePoints.Instance.AddPoints();
         _IsDead = true;
         _Rb2d.AddForceAtPosition(Vector2.up *  200.0f, transform.position);
         _Rb2d.gravityScale = 1.0f;

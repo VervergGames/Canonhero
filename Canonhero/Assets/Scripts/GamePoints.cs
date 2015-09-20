@@ -13,6 +13,7 @@ public class GamePoints : Singleton<GamePoints> {
     }
 
     void Start () {
+        CurrentPoints = 0;
         UpdatePointText();
 	}
 
@@ -21,9 +22,9 @@ public class GamePoints : Singleton<GamePoints> {
         return CurrentPoints;
     }
 
-    public void AddPoints(int value)
+    public void AddPoints()
     {
-        CurrentPoints += value;
+        CurrentPoints ++;
         UpdatePointText();
     }
 
