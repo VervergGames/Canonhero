@@ -13,12 +13,4 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         transform.DOMoveX(transform.position.x + Speed, 1f);
 	}
-
-    void OnTriggerEnter2D (Collider2D col)
-    {
-        if(col.tag == "Ground")
-        {
-            InfinitySpawner.Instance.SpawnNext();
-        }
-    }
 }

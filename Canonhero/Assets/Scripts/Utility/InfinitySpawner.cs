@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class InfinitySpawner : Singleton<InfinitySpawner> {
+public class InfinitySpawner : MonoBehaviour {
 
     public GameObject Object;
     public int StartSpawn = 1;
@@ -11,11 +11,6 @@ public class InfinitySpawner : Singleton<InfinitySpawner> {
     private GameObject _CurrentObject;
     private List<GameObject> _ObjectPools = new List<GameObject>();
     private int _PoolIndex = 0;
-
-    void Awake()
-    {
-        instance = this;
-    }
 
 	void Start () {
         _CurrentObject = Object;
