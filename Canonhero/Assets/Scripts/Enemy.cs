@@ -16,19 +16,31 @@ public class Enemy : MonoBehaviour {
 	
 	}
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if(!_IsDead)
-        {
-            _Anim.SetTrigger("Dead");
-            Dead();
-        }    }
-
     void Dead()
     {
         GamePoints.Instance.AddPoints();
         _IsDead = true;
         _Rb2d.AddForceAtPosition(Vector2.up *  200.0f, transform.position);
         _Rb2d.gravityScale = 1.0f;
+    }
+
+    public void WeakShooted()
+    {
+        if(!_IsDead)
+        {
+            _Anim.SetTrigger("Dead");
+            Debug.Log("WeakShooted");
+            Dead();
+        }
+    }
+
+    public void NormalShooted()
+    {
+        if (!_IsDead)
+        {
+            _Anim.SetTrigger("Dead");
+            Debug.Log("NormalShooted");
+            Dead();
+        }
     }
 }
