@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour {
 
     void OnTriggerEnter2D (Collider2D col)
     {
-        if(col.name == "Attack Area")
+        if(col.name == "Attack Area" && !_IsDead)
         {
             Attack();
         }
