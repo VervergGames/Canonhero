@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
+    public GameObject EnemyAttack;
+    public Transform AttackPoint;
+
     private Animator _Anim;
     private Rigidbody2D _Rb2d;
     private bool _IsDead = false;
@@ -13,7 +16,7 @@ public class Enemy : MonoBehaviour {
 	}
 	
 	void Update () {
-	
+
 	}
 
     void Dead()
@@ -41,6 +44,19 @@ public class Enemy : MonoBehaviour {
             _Anim.SetTrigger("Dead");
             Debug.Log("NormalShooted");
             Dead();
+        }
+    }
+
+    void Attack()
+    {
+        Instantiate(EnemyAttack, AttackPoint.position, AttackPoint.rotation);
+    }
+
+    void OnTriggerEnter2D (Collider2D col)
+    {
+        if(col.name == "Attack Area")
+        {
+            Attack();
         }
     }
 }

@@ -17,10 +17,7 @@ public class PlayerShooting : MonoBehaviour {
     }
 	
 	void Update () {
-	    if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
+
 	}
 
     public void Shoot()

@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class InfinitySpawner : MonoBehaviour {
 
     public GameObject Object;
-    public int StartSpawn = 1;
     public int MaxObject = 3;
 
     private GameObject _CurrentObject;
@@ -15,7 +14,7 @@ public class InfinitySpawner : MonoBehaviour {
 	void Start () {
         _CurrentObject = Object;
         _ObjectPools.Add(_CurrentObject);
-        for (int i = 0; i < StartSpawn; i++)
+        for (int i = 0; i < MaxObject - 1; i++)
         {
             SpawnNext();
         }
