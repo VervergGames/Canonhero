@@ -5,6 +5,7 @@ using System.Collections;
 public class ProjectileMovement : MonoBehaviour {
 
     public float Power;
+    public float DestroyDelay = 3.0f;
 
     private Rigidbody2D rb2d;
     private bool _AlreadyHit = false;
@@ -28,10 +29,19 @@ public class ProjectileMovement : MonoBehaviour {
             return;
         _AlreadyHit = true;
 
-        rb2d.isKinematic = true;
-        transform.GetComponent<BoxCollider2D>().enabled = false;
-        transform.parent = col.transform;
-        transform.localPosition = col.transform.InverseTransformPoint(col.contacts[0].point);
-        
+        if(col.transform.tag != "Projectile")
+        {
+            rb2d.isKinematic = true;
+            transform.GetComponent<BoxCollider2D>().enabled = false;
+            transform.parent = col.transform;
+            transform.localPosition = col.transform.InverseTransformPoint(col.contacts[0].point);
+            GetComponentInChildren<TrailRenderer>().enabled = false;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        Destroy(gameObject, DestroyDelay);
     }
 }
