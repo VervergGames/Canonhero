@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Audio;
 using System.Collections;
 
 public class GameController : Singleton<GameController> {
@@ -8,7 +7,6 @@ public class GameController : Singleton<GameController> {
     public Animator Anim;
     public PlayerMovement Movement;
     public RandomSpawner Spawner;
-    public AudioMixer Mixer;
     public GameObject MainMenuPanel;
     public GameObject ShopPanel;
     public GameObject LosePanel;
@@ -103,10 +101,5 @@ public class GameController : Singleton<GameController> {
     public void DoubleCoins()
     {
         AdManager.instance.ShowAd("rewardedVideo");
-    }
-
-    public void MusicToggle()
-    {
-        
     }
 }
