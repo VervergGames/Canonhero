@@ -87,4 +87,9 @@ public class GameController : Singleton<GameController> {
         Spawner.StartSpawn();
         CloseLosePanel();
     }
+
+    public void DoubleCoins()
+    {
+        AdManager.instance.ShowAd("rewardedVideo");
+    }
 }
