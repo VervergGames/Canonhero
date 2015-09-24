@@ -45,6 +45,7 @@ MonoBehaviour:
   Movement: {fileID: 0}
   Spawner: {fileID: 11416728}
   MainMenuPanel: {fileID: 0}
+  ShopPanel: {fileID: 0}
 --- !u!114 &11416728
 MonoBehaviour:
   m_ObjectHideFlags: 1

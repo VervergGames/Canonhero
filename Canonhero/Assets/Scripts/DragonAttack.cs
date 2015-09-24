@@ -2,7 +2,7 @@
 using System.Collections;
 using DG.Tweening;
 
-public class AutoMoveTo : MonoBehaviour {
+public class DragonAttack : MonoBehaviour {
 
     private Transform _Target;
     public float Speed;
@@ -32,6 +32,9 @@ public class AutoMoveTo : MonoBehaviour {
     {
         if(col.transform.tag == "Player")
         {
+            col.GetComponent<PlayerController>().Dead();
+            col.GetComponent<PlayerMovement>().enabled = false;
+            col.gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

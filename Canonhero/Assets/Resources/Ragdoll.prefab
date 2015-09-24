@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200724}
   - 114: {fileID: 11424318}
   - 50: {fileID: 5067066}
-  - 58: {fileID: 5863202}
+  - 60: {fileID: 6038142}
   m_Layer: 0
   m_Name: Ragdoll
   m_TagString: Untagged
@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.9019814, y: -2.14973187, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415588}
@@ -75,8 +75,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &5863202
-CircleCollider2D:
+--- !u!60 &6038142
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -86,8 +86,38 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: .6875
+  m_Points:
+    m_Paths:
+    - - {x: -.104999997, y: -.689999998}
+      - {x: -.0949999988, y: -.689999998}
+      - {x: .165000007, y: -.649999976}
+      - {x: .185000002, y: -.629999995}
+      - {x: .185000002, y: -.600000024}
+      - {x: .155000001, y: -.569999993}
+      - {x: .144999996, y: -.569999993}
+      - {x: .185000002, y: -.569999993}
+      - {x: .204999998, y: -.660000026}
+      - {x: .504999995, y: -.610000014}
+      - {x: .574999988, y: -.560000002}
+      - {x: .574999988, y: -.519999981}
+      - {x: .335000008, y: -.409999996}
+      - {x: .215000004, y: -.360000014}
+      - {x: .185000002, y: -.319999993}
+      - {x: -.0450000018, y: -.340000004}
+      - {x: -.104999997, y: -.289999992}
+      - {x: -.245000005, y: -.159999996}
+      - {x: -.435000002, y: -.159999996}
+      - {x: -.474999994, y: -.170000002}
+      - {x: -.524999976, y: -.200000003}
+      - {x: -.584999979, y: -.310000002}
+      - {x: -.584999979, y: -.449999988}
+      - {x: -.574999988, y: -.519999981}
+      - {x: -.574999988, y: -.680000007}
+      - {x: -.545000017, y: -.689999998}
+      - {x: -.444999993, y: -.689999998}
+      - {x: -.425000012, y: -.660000026}
+      - {x: -.354999989, y: -.629999995}
+      - {x: -.215000004, y: -.620000005}
 --- !u!114 &11424318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e620ee25f9a34e14c9577720b8487b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: 10
+  Force: 20
   Radius: 3
   ExplosionPoint: {fileID: 415588}
 --- !u!212 &21200724
@@ -134,7 +164,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Force
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136278}
