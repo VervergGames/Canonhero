@@ -10,12 +10,17 @@ public class RandomSpawner : MonoBehaviour {
     public Vector2 OffsetMax;
 
 	void Start () {
-        InvokeRepeating("Spawn", 1.0f, Interval);
+        StartSpawn();
 	}
 	
 	void Update () {
 	
 	}
+
+    public void StartSpawn()
+    {
+        InvokeRepeating("Spawn", 1.0f, Interval);
+    }
 
     void Spawn()
     {

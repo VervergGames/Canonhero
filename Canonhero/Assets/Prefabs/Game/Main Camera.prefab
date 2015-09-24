@@ -56,6 +56,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &158692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 457434}
+  - 68: {fileID: 6830456}
+  m_Layer: 8
+  m_Name: Ragdoll Boundary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &195714
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +122,7 @@ Transform:
   - {fileID: 423108}
   - {fileID: 483576}
   - {fileID: 440986}
+  - {fileID: 457434}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &423108
@@ -132,6 +149,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 403306}
   m_RootOrder: 3
+--- !u!4 &457434
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 403306}
+  m_RootOrder: 4
 --- !u!4 &461742
 Transform:
   m_ObjectHideFlags: 1
@@ -306,6 +335,22 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 5, y: 5}
+--- !u!68 &6830456
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158692}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: -8.72352219, y: -4.16704988}
+  - {x: -8.94210911, y: 10.2851095}
+  - {x: 5.77193594, y: 10.2588253}
+  - {x: 5.70016623, y: -4.26319885}
 --- !u!81 &8158972
 AudioListener:
   m_ObjectHideFlags: 1
