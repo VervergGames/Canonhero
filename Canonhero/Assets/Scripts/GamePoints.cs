@@ -22,6 +22,12 @@ public class GamePoints : Singleton<GamePoints> {
         return CurrentPoints;
     }
 
+    public void ClearPoints()
+    {
+        CurrentPoints = 0;
+        UpdatePointText();
+    }
+
     public void AddPoints()
     {
         CurrentPoints ++;
