@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 7cebdf8b52e81494eb3b7f10b896b72d
+timeCreated: 1443065268
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Base - Sprite_0
+    21300002: Base - Sprite_1
+    21300004: Base - Sprite_2
+    21300006: Base - Sprite_3
+    21300008: Base - Sprite_4
+    21300010: Base - Sprite_5
+    21300012: Base - Sprite_6
+    21300014: Base - Sprite_7
+    21300016: Base - Sprite_8
+    21300018: Base - Sprite_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Base - Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 609
+        width: 162
+        height: 142
+      alignment: 9
+      pivot: {x: .629711032, y: .0983396694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 606
+        width: 251
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 474
+        width: 150
+        height: 323
+      alignment: 9
+      pivot: {x: .930270195, y: .541821957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 115
+        height: 70
+      alignment: 9
+      pivot: {x: .656620085, y: .735862076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 272
+        width: 130
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 427
+        width: 121
+        height: 43
+      alignment: 9
+      pivot: {x: .127865627, y: .395282835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 89
+        width: 100
+        height: 161
+      alignment: 9
+      pivot: {x: .665103614, y: .919517636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 101
+        width: 99
+        height: 149
+      alignment: 9
+      pivot: {x: .287745923, y: .872716904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 0
+        width: 132
+        height: 229
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Base - Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 14
+        width: 130
+        height: 236
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
