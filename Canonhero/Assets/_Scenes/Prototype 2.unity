@@ -146,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15faa58d56a9c664bbf2eb3e4615a2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameID: 1003686
 --- !u!114 &84901288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +398,7 @@ Prefab:
     - target: {fileID: 11423864, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 583950876}
+      objectReference: {fileID: 84901287}
     - target: {fileID: 11477162, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -448,6 +447,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 583950876}
+    - target: {fileID: 11423864, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowRewardedAd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
   m_IsPrefabParent: 0

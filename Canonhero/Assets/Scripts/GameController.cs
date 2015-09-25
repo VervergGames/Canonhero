@@ -102,7 +102,7 @@ public class GameController : Singleton<GameController> {
 
     public void DoubleCoins()
     {
-        AdManager.instance.ShowAd("rewardedVideo");
+        AdManager.instance.ShowRewardedAd();
     }
 
     private void AskForReviewNow()
