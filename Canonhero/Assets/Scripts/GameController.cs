@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VoxelBusters.NativePlugins;
 
 public class GameController : Singleton<GameController> {
 
@@ -20,6 +21,7 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = false;
         Movement.enabled = false;
         Spawner.enabled = false;
+        AskForReviewNow();
 	}
 	
 	void Update () {
@@ -101,5 +103,13 @@ public class GameController : Singleton<GameController> {
     public void DoubleCoins()
     {
         AdManager.instance.ShowAd("rewardedVideo");
+    }
+
+    private void AskForReviewNow()
+    {
+        if (NPSettings.Utility.RateMyApp.IsEnabled)
+        {
+            NPBinding.Utility.RateMyApp.AskForReviewNow();
+        }
     }
 }
