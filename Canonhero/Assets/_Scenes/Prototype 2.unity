@@ -453,6 +453,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowRewardedAd
       objectReference: {fileID: 0}
+    - target: {fileID: 11441790, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenRate
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
   m_IsPrefabParent: 0
@@ -700,6 +704,10 @@ Prefab:
     - target: {fileID: 128794, guid: c0b6ef3586feb7e43bfed6aed14d7380, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145844, guid: c0b6ef3586feb7e43bfed6aed14d7380, type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0b6ef3586feb7e43bfed6aed14d7380, type: 2}

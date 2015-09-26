@@ -106,6 +106,13 @@ public class GameController : Singleton<GameController> {
         AdManager.instance.ShowRewardedAd();
     }
 
+    public void OpenRate()
+    {
+        Debug.Log("Popup Rate Show");
+        MobileNativeRateUs ratePopUp = new MobileNativeRateUs("Like this game?", "Please rate to support future updates!");
+        ratePopUp.Start();
+    }
+
     //private void AskForReviewNow()
     //{
     //    if (NPSettings.Utility.RateMyApp.IsEnabled)
