@@ -6,11 +6,10 @@ public class AdManager : Singleton<AdManager>
 {
     //[SerializeField] string gameID = "33675";
 
-    //void Awake()
-    //{
-    //    instance = this;
-    //    Advertisement.Initialize (gameID, false);
-    //}
+    void Awake()
+    {
+        instance = this;
+    }
 
     //public void ShowAd(string zone = "")
     //{
@@ -58,6 +57,11 @@ public class AdManager : Singleton<AdManager>
     //    Time.timeScale = currentTimeScale;
     //}
 
+    void Start()
+    {
+        ShowAd();
+    }
+
     public void ShowRewardedAd()
     {
         if (Advertisement.IsReady("rewardedVideo"))
@@ -83,6 +87,14 @@ public class AdManager : Singleton<AdManager>
             case ShowResult.Failed:
                 Debug.LogError("The ad failed to be shown.");
                 break;
+        }
+    }
+
+    public void ShowAd()
+    {
+        if (Advertisement.IsReady())
+        {
+            Advertisement.Show();
         }
     }
 }

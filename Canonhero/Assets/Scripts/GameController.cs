@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using VoxelBusters.NativePlugins;
+//using VoxelBusters.NativePlugins;
 
 public class GameController : Singleton<GameController> {
 
@@ -21,7 +21,7 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = false;
         Movement.enabled = false;
         Spawner.enabled = false;
-        AskForReviewNow();
+        //AskForReviewNow();
 	}
 	
 	void Update () {
@@ -83,6 +83,7 @@ public class GameController : Singleton<GameController> {
 
     public void Revive()
     {
+        AdmobManager.instance.ShowInterstitial();
         ClearGame();
         Player.SetActive(true);
         Movement.enabled = true;
@@ -105,11 +106,11 @@ public class GameController : Singleton<GameController> {
         AdManager.instance.ShowRewardedAd();
     }
 
-    private void AskForReviewNow()
-    {
-        if (NPSettings.Utility.RateMyApp.IsEnabled)
-        {
-            NPBinding.Utility.RateMyApp.AskForReviewNow();
-        }
-    }
+    //private void AskForReviewNow()
+    //{
+    //    if (NPSettings.Utility.RateMyApp.IsEnabled)
+    //    {
+    //        NPBinding.Utility.RateMyApp.AskForReviewNow();
+    //    }
+    //}
 }

@@ -298,7 +298,8 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    7: UNITY_ADS_SDK
   metroPackageName: Canonhero
   metroPackageLogo: 
   metroPackageLogo140: 

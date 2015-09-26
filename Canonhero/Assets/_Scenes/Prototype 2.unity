@@ -157,6 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aff316ee87ce7499f8a76f57bc28c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BannerId: ca-app-pub-8561414184067206/5916680170
+  InterstitialId: ca-app-pub-8561414184067206/6209228174
 --- !u!1 &142651384 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112702, guid: 2932018342ec84b48ae552c1488ccfa4, type: 2}
