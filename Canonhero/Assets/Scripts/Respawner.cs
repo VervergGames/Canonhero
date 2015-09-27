@@ -7,7 +7,7 @@ public class Respawner : MonoBehaviour {
     public InfinitySpawner TheSpawner;
 
 	void Start () {
-	
+
 	}
 	
 	void Update () {
