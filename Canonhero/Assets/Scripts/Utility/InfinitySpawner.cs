@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class InfinitySpawner : MonoBehaviour {
 
     public GameObject Object;
+    public Sprite[] Sprites;
     public int MaxObject = 3;
 
     private GameObject _CurrentObject;
@@ -13,6 +14,7 @@ public class InfinitySpawner : MonoBehaviour {
 
 	void Start () {
         _CurrentObject = Object;
+        AssignRandomSprites(_CurrentObject);
         _ObjectPools.Add(_CurrentObject);
         for (int i = 0; i < MaxObject - 1; i++)
         {
@@ -34,6 +36,8 @@ public class InfinitySpawner : MonoBehaviour {
             _CurrentObject = Instantiate(Object, nextPost, Object.transform.rotation) as GameObject;
             _ObjectPools.Add(_CurrentObject);
         }
+
+        AssignRandomSprites(_CurrentObject);
     }
 
     void NextPool()
@@ -43,5 +47,10 @@ public class InfinitySpawner : MonoBehaviour {
         {
             _PoolIndex = 0;
         }
+    }
+
+    void AssignRandomSprites(GameObject CurrentObject)
+    {
+        CurrentObject.GetComponent<SpriteRenderer>().sprite = Sprites[Random.Range(0, Sprites.Length)];
     }
 }
