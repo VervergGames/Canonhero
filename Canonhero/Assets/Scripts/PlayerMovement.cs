@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using Chronos;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -11,6 +12,6 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	void Update () {
-        transform.DOMoveX(transform.position.x + Speed, 1f);
+        transform.DOMoveX(transform.position.x + Speed, 1f).timeScale = GetComponent<Timeline>().timeScale; ;
 	}
 }

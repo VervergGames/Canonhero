@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5099276}
   - 114: {fileID: 11427354}
   - 61: {fileID: 6151218}
+  - 114: {fileID: 11461164}
   m_Layer: 0
   m_Name: Canonball
   m_TagString: Projectile
@@ -147,6 +148,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Power: 1000
   DestroyDelay: 5
+--- !u!114 &11461164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 1
+  _globalClockKey: Game
+  _recordingDuration: 30
+  _recordingInterval: .5
+  _recordTransform: 0
 --- !u!212 &21223296
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -219,6 +236,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: DestroyDelay
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _recordTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _globalClockKey
+      value: Game
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
