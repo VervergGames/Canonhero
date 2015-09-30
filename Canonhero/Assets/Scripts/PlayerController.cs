@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     public void Dead()
     {
         GameController.Instance.StopSpawning();
+        GetComponent<PlayerShooting>().SetAim(false);
         Instantiate(Ragdoll, transform.position, transform.rotation);
         GameController.Instance.OpenLosePanel();
     }

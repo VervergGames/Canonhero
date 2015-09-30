@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Chronos;
 //using VoxelBusters.NativePlugins;
 
 public class GameController : Singleton<GameController> {
@@ -12,6 +13,10 @@ public class GameController : Singleton<GameController> {
     public GameObject ShopPanel;
     public GameObject LosePanel;
 
+    private bool isGameStarted = false;
+    private float startTime;
+    private GlobalClock _GameClock;
+
     void Awake()
     {
         instance = this;
@@ -21,11 +26,12 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = false;
         Movement.enabled = false;
         Spawner.enabled = false;
+        _GameClock = Timekeeper.instance.Clock("Game");
         //AskForReviewNow();
 	}
 	
 	void Update () {
-	
+
 	}
 
     public void StartGame()
@@ -34,6 +40,9 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = true;
         Movement.enabled = true;
         Spawner.enabled = true;
+        startTime = Time.time;
+        isGameStarted = true;
+        _GameClock.LerpTimeScale(3, 60.0f);
     }
 
     public void StopSpawning()

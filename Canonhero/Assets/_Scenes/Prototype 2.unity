@@ -1050,6 +1050,10 @@ Prefab:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1547046720}
+    - target: {fileID: 197244, guid: e264760ce6585a449903c27fb8a6a81a, type: 2}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e264760ce6585a449903c27fb8a6a81a, type: 2}
   m_IsPrefabParent: 0
@@ -1217,7 +1221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11409434, guid: c0b6ef3586feb7e43bfed6aed14d7380, type: 2}
       propertyPath: Delay
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11498684, guid: c0b6ef3586feb7e43bfed6aed14d7380, type: 2}
       propertyPath: m_Enabled

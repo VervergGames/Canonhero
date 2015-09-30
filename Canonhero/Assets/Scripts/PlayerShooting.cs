@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using Chronos;
 
 public class PlayerShooting : MonoBehaviour {
 
@@ -54,5 +55,15 @@ public class PlayerShooting : MonoBehaviour {
             return true;
         else
             return false;
+    }
+
+    public void Reload()
+    {
+        nextShoot = 0;
+    }
+
+    public void SetAim(bool aiming)
+    {
+        isAiming = aiming;
     }
 }

@@ -9,10 +9,12 @@ public class Enemy : MonoBehaviour {
     private Animator _Anim;
     private Rigidbody2D _Rb2d;
     private bool _IsDead = false;
+    private PlayerShooting _PlayerShooting;
 
 	void Start () {
         _Anim = GetComponent<Animator>();
         _Rb2d = GetComponent<Rigidbody2D>();
+        _PlayerShooting = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting>();
 	}
 	
 	void Update () {
@@ -25,6 +27,7 @@ public class Enemy : MonoBehaviour {
         _IsDead = true;
         _Rb2d.AddForceAtPosition(Vector2.up *  200.0f, transform.position);
         _Rb2d.gravityScale = 1.0f;
+        _PlayerShooting.Reload();
     }
 
     public void WeakShooted()
