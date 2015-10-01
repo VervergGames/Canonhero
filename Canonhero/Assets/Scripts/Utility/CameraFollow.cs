@@ -3,11 +3,11 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
-    public Transform Target;
+    private Transform Target;
     public Vector3 Offset;
 
 	void Start () {
-	
+        Target = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	void Update () {

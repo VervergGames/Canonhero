@@ -9,7 +9,7 @@ public class DragonAttack : MonoBehaviour {
     private bool _AlreadyHit = false;
 
     void Start () {
-        _Target = GameObject.Find("Player").transform;
+        _Target = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	void Update () {

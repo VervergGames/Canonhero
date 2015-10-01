@@ -5,15 +5,17 @@ using Chronos;
 
 public class GameController : Singleton<GameController> {
 
-    public GameObject Player;
-    public Animator Anim;
-    public PlayerMovement Movement;
-    public RandomSpawner Spawner;
+    
     public GameObject MainMenuPanel;
     public GameObject ShopPanel;
     public GameObject LosePanel;
 
-    private bool isGameStarted = false;
+    private GameObject Player;
+    private Animator Anim;
+    private PlayerMovement Movement;
+    private RandomSpawner Spawner;
+    private PlayerShooting Shooting;
+
     private float startTime;
     private GlobalClock _GameClock;
 
@@ -23,6 +25,11 @@ public class GameController : Singleton<GameController> {
     }
 
     void Start () {
+        Player = GameObject.FindGameObjectWithTag("Player");
+        Anim = Player.GetComponent<Animator>();
+        Movement = Player.GetComponent<PlayerMovement>();
+        Shooting = Player.GetComponent<PlayerShooting>();
+        Spawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<RandomSpawner>();
         Anim.enabled = false;
         Movement.enabled = false;
         Spawner.enabled = false;
@@ -40,8 +47,6 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = true;
         Movement.enabled = true;
         Spawner.enabled = true;
-        startTime = Time.time;
-        isGameStarted = true;
         _GameClock.LerpTimeScale(3, 60.0f);
     }
 
@@ -78,6 +83,7 @@ public class GameController : Singleton<GameController> {
     public void OpenLosePanel()
     {
         LosePanel.SetActive(true);
+        AdmobManager.instance.ShowInterstitial();
     }
 
     public void CloseLosePanel()
@@ -92,7 +98,6 @@ public class GameController : Singleton<GameController> {
 
     public void Revive()
     {
-        AdmobManager.instance.ShowInterstitial();
         ClearGame();
         Player.SetActive(true);
         Movement.enabled = true;
@@ -112,7 +117,7 @@ public class GameController : Singleton<GameController> {
 
     public void DoubleCoins()
     {
-        AdManager.instance.ShowRewardedAd();
+        AdManager.instance.ShowAd();
     }
 
     public void OpenRate()
@@ -120,6 +125,16 @@ public class GameController : Singleton<GameController> {
         Debug.Log("Popup Rate Show");
         MobileNativeRateUs ratePopUp = new MobileNativeRateUs("Like this game?", "Please rate to support future updates!");
         ratePopUp.Start();
+    }
+
+    public void PlayerAim()
+    {
+        Shooting.StartAim();   
+    }
+
+    public void PlayerAttack()
+    {
+        Shooting.ReleaseAim();
     }
 
     //private void AskForReviewNow()

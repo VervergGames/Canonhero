@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 20c8fc0073b3213488cf6ed6bd576bd3
+timeCreated: 1443613841
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Archer Sprite 200x200_0
+    21300002: Archer Sprite 200x200_1
+    21300004: Archer Sprite 200x200_2
+    21300006: Archer Sprite 200x200_3
+    21300008: Archer Sprite 200x200_4
+    21300010: Archer Sprite 200x200_5
+    21300012: Archer Sprite 200x200_6
+    21300014: Archer Sprite 200x200_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Archer Sprite 200x200_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 378
+        width: 142
+        height: 141
+      alignment: 9
+      pivot: {x: .56218648, y: .117274724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 235
+        width: 134
+        height: 286
+      alignment: 9
+      pivot: {x: .111926407, y: .520583868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_2
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 194
+        width: 19
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 234
+        width: 89
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 169
+        width: 120
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 109
+        height: 67
+      alignment: 9
+      pivot: {x: .581013858, y: .705019593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 84
+        height: 129
+      alignment: 9
+      pivot: {x: .67520833, y: .865085542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer Sprite 200x200_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 9
+        width: 106
+        height: 123
+      alignment: 9
+      pivot: {x: .277848721, y: .827055633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

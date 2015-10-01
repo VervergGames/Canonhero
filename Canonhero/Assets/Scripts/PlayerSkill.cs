@@ -1,21 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using Chronos;
 
-public class PlayerSkill : MonoBehaviour {
+public class PlayerSkill : Singleton<PlayerSkill> {
 
     public float PauseTime = 2.0f;
-    public GameObject SkillPanel;
+    private GameObject SkillPanel;
+    private GameObject CutInImage;
+    public Sprite CutIn;
     GlobalClock GameClock;
+    
+    void Awake()
+    {
+        instance = this;
+    }
 
 	void Start () {
-	    if(Timekeeper.instance.HasClock("Game"))
+        SkillPanel = GameObject.FindGameObjectWithTag("SkillPanel");
+        CutInImage = GameObject.FindGameObjectWithTag("CutInImage");
+        SkillPanel.SetActive(false);
+	    if(Timekeeper.instance.HasClock("RootGame"))
         {
-            GameClock = Timekeeper.instance.Clock("Game");
+            GameClock = Timekeeper.instance.Clock("RootGame");
         }
         else
         {
-            Debug.LogError("Game Clock is not identified");
+            Debug.LogError("RootGame Clock is not identified");
         }
 
         if(SkillPanel == null)
@@ -25,10 +36,7 @@ public class PlayerSkill : MonoBehaviour {
 	}
 	
 	void Update () {
-	    if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Skill();
-        }
+	    
 	}
 
     public void Skill()
@@ -40,6 +48,7 @@ public class PlayerSkill : MonoBehaviour {
     {
         GameClock.localTimeScale = 0;
         SkillPanel.SetActive(true);
+        CutInImage.GetComponent<Image>().sprite = CutIn;
         yield return new WaitForSeconds(PauseTime);
         GameClock.localTimeScale = 1.0f;
         SkillPanel.SetActive(false);

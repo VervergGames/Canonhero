@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: 98afabdb33b37b64a844a619e9df5cf6
-timeCreated: 1443358592
+guid: ee81b57eda08a6e4c8b3cd72cb38e565
+timeCreated: 1443701588
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Spearman-Sprite_0
-    21300002: Spearman-Sprite_1
-    21300004: Spearman-Sprite_2
-    21300006: Spearman-Sprite_3
-    21300008: Spearman-Sprite_4
-    21300010: Spearman-Sprite_5
-    21300012: Spearman-Sprite_6
-    21300014: Spearman-Sprite_7
+    21300000: Spearman-Sprite-01_0
+    21300002: Spearman-Sprite-01_1
+    21300004: Spearman-Sprite-01_2
+    21300006: Spearman-Sprite-01_3
+    21300008: Spearman-Sprite-01_4
+    21300010: Spearman-Sprite-01_5
+    21300012: Spearman-Sprite-01_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,7 +33,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
@@ -52,91 +51,81 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 120
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Spearman-Sprite_0
+    - name: Spearman-Sprite-01_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 2061
-        width: 526
-        height: 561
+        x: 65
+        y: 177
+        width: 67
+        height: 72
       alignment: 9
-      pivot: {x: .519051075, y: .0713003799}
+      pivot: {x: .507870257, y: .133814499}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_1
+    - name: Spearman-Sprite-01_1
       rect:
         serializedVersion: 2
-        x: 2031
-        y: 1843
-        width: 1572
-        height: 810
+        x: 277
+        y: 54
+        width: 11
+        height: 226
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_2
+    - name: Spearman-Sprite-01_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 988
-        width: 353
-        height: 371
+        y: 125
+        width: 45
+        height: 48
       alignment: 9
-      pivot: {x: .201929152, y: .27041173}
+      pivot: {x: .195333719, y: .25831762}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_3
+    - name: Spearman-Sprite-01_3
       rect:
         serializedVersion: 2
-        x: 1004
-        y: 840
-        width: 445
-        height: 716
-      alignment: 9
-      pivot: {x: .567556441, y: .632958412}
+        x: 65
+        y: 59
+        width: 57
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_4
+    - name: Spearman-Sprite-01_4
       rect:
         serializedVersion: 2
-        x: 1804
-        y: 882
-        width: 600
-        height: 514
+        x: 154
+        y: 102
+        width: 78
+        height: 66
       alignment: 9
-      pivot: {x: .53340292, y: .431764603}
+      pivot: {x: .155222386, y: .531957924}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_5
+    - name: Spearman-Sprite-01_5
       rect:
         serializedVersion: 2
-        x: 2844
-        y: 1164
-        width: 401
-        height: 207
-      alignment: 9
-      pivot: {x: .162639663, y: .645230055}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_6
-      rect:
-        serializedVersion: 2
-        x: 18
+        x: 41
         y: 0
-        width: 303
-        height: 467
+        width: 39
+        height: 59
       alignment: 9
-      pivot: {x: .516536117, y: .864784956}
+      pivot: {x: .540562093, y: .866433442}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite_7
+    - name: Spearman-Sprite-01_6
       rect:
         serializedVersion: 2
-        x: 794
-        y: 38
-        width: 328
-        height: 366
+        x: 125
+        y: 12
+        width: 42
+        height: 47
       alignment: 9
-      pivot: {x: .240313277, y: .719035268}
+      pivot: {x: .26145643, y: .802920699}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

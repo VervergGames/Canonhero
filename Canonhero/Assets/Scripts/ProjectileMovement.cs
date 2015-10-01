@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Chronos;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class ProjectileMovement : MonoBehaviour {
@@ -9,9 +10,11 @@ public class ProjectileMovement : MonoBehaviour {
 
     private Rigidbody2D rb2d;
     private bool _AlreadyHit = false;
+    private Timeline time;
 
 	void Start () {
-        rb2d = GetComponent<Rigidbody2D>();
+        time = GetComponent<Timeline>();
+        rb2d = time.GetComponent<Rigidbody2D>();
         rb2d.AddForce(transform.right * Power);
 	}
 	

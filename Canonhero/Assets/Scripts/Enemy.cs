@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Chronos;
 
 public class Enemy : MonoBehaviour {
 
@@ -10,10 +11,12 @@ public class Enemy : MonoBehaviour {
     private Rigidbody2D _Rb2d;
     private bool _IsDead = false;
     private PlayerShooting _PlayerShooting;
+    private Timeline time;
 
 	void Start () {
+        time = GetComponent<Timeline>();
         _Anim = GetComponent<Animator>();
-        _Rb2d = GetComponent<Rigidbody2D>();
+        _Rb2d = time.GetComponent<Rigidbody2D>();
         _PlayerShooting = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting>();
 	}
 	

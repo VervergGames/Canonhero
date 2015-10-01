@@ -46,6 +46,7 @@ GameObject:
   - 114: {fileID: 11441882}
   - 50: {fileID: 5059756}
   - 61: {fileID: 6131314}
+  - 114: {fileID: 11434256}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Enemy
@@ -115,8 +116,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 163.539322, y: 34.2631645, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 365.327271, y: 108.212532, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 480642}
   - {fileID: 421724}
@@ -239,6 +240,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWeakPoint: 1
+--- !u!114 &11434256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 1
+  _globalClockKey: Game
+  _recordingDuration: 30
+  _recordingInterval: .5
+  _recordTransform: 0
 --- !u!114 &11441882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -314,7 +331,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 447354165
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: ff84aacc54bb8d843be32e8d39412a39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9c136f9dcfd3954fa0f3fab6260607f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -366,6 +383,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1.89999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _globalClockKey
+      value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _recordTransform
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 namespace Chronos
 {
-	/// <summary>
-	/// Determines what type of clock a timeline observes. 
-	/// </summary>
-	public enum TimelineMode
+    /// <summary>
+    /// Determines what type of clock a timeline observes. 
+    /// </summary>
+    public enum TimelineMode
 	{
 		/// <summary>
 		/// The timeline observes a LocalClock attached to the same GameObject.
