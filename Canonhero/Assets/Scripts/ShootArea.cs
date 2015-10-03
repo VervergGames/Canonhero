@@ -15,9 +15,9 @@ public class ShootArea : MonoBehaviour {
 
     void OnCollisionEnter2D (Collision2D col)
     {
-        if(col.transform.tag == "Projectile")
+        Enemy enemy = GetComponentInParent<Enemy>();
+        if (col.transform.tag == "Projectile")
         {
-            Enemy enemy = GetComponentInParent<Enemy>();
             if(isWeakPoint)
             {
                 enemy.NormalShooted();
@@ -26,6 +26,10 @@ public class ShootArea : MonoBehaviour {
             {
                 enemy.WeakShooted();
             }
+        }
+        else if(col.transform.tag == "Ultimate Projectile")
+        {
+            enemy.UltimateShooted();
         }
     }
 }

@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: fe71b54e2fec11243a9ca0d22926920e
+timeCreated: 1443787737
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Archer_0
+    21300002: Archer_1
+    21300004: Archer_2
+    21300006: Archer_3
+    21300008: Archer_4
+    21300010: Archer_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Archer_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 431
+        width: 151
+        height: 149
+      alignment: 9
+      pivot: {x: .514467239, y: .111471087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 276
+        width: 145
+        height: 304
+      alignment: 9
+      pivot: {x: .0932202563, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 208
+        width: 190
+        height: 189
+      alignment: 9
+      pivot: {x: .752948701, y: .349739522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 140
+        width: 301
+        height: 71
+      alignment: 9
+      pivot: {x: .227837443, y: .746147454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 88
+        height: 137
+      alignment: 9
+      pivot: {x: .67377162, y: .842832029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Archer_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 26
+        width: 112
+        height: 131
+      alignment: 9
+      pivot: {x: .275692523, y: .79183042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

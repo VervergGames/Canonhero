@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour {
 
     void Dead()
     {
-        GamePoints.Instance.AddPoints();
+        GameCoins.Instance.AddCoin(1);
         _IsDead = true;
         _Rb2d.AddForceAtPosition(Vector2.up *  200.0f, transform.position);
         _Rb2d.gravityScale = 1.0f;
@@ -38,6 +38,8 @@ public class Enemy : MonoBehaviour {
         if(!_IsDead)
         {
             _Anim.SetTrigger("Dead");
+            GamePoints.Instance.AddPoints(2);
+            _PlayerShooting.Headshot();
             Debug.Log("WeakShooted");
             Dead();
         }
@@ -48,8 +50,19 @@ public class Enemy : MonoBehaviour {
         if (!_IsDead)
         {
             _Anim.SetTrigger("Dead");
+            GamePoints.Instance.AddPoints(1);
             Debug.Log("NormalShooted");
             Dead();
+        }
+    }
+
+    public void UltimateShooted()
+    {
+        if(!_IsDead)
+        {
+            _Anim.SetTrigger("Dead");
+            GamePoints.Instance.AddPoints(5);
+            GameCoins.Instance.AddCoin(5);
         }
     }
 

@@ -83,7 +83,7 @@ public class GameController : Singleton<GameController> {
     public void OpenLosePanel()
     {
         LosePanel.SetActive(true);
-        AdmobManager.instance.ShowInterstitial();
+        //AdmobManager.instance.ShowInterstitial();
     }
 
     public void CloseLosePanel()

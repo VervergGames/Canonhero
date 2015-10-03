@@ -23,16 +23,14 @@ public class PlayerShooting : MonoBehaviour {
     private float nextShoot = 0;
     private bool isAiming = false;
     private bool isUltimate = false;
+    private int UltimateCount = 0;
 
 	void Start () {
         Aimer.SetActive(false);
     }
 	
 	void Update () {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            isUltimate = true;
-        }
+        
 	}
 
     public void Shoot()
@@ -100,6 +98,16 @@ public class PlayerShooting : MonoBehaviour {
         foreach (AimingObject obj in Aimings)
         {
             obj.Object.transform.rotation = Quaternion.identity;
+        }
+    }
+
+    public void Headshot()
+    {
+        UltimateCount++;
+        if(UltimateCount == 3)
+        {
+            isUltimate = true;
+            UltimateCount = 0;
         }
     }
 }

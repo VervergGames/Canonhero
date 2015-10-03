@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: ee81b57eda08a6e4c8b3cd72cb38e565
-timeCreated: 1443701588
+guid: 74b43c3ac9aba6c4b86bb6ab4f182e9e
+timeCreated: 1443788431
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Spearman-Sprite-01_0
-    21300002: Spearman-Sprite-01_1
-    21300004: Spearman-Sprite-01_2
-    21300006: Spearman-Sprite-01_3
-    21300008: Spearman-Sprite-01_4
-    21300010: Spearman-Sprite-01_5
-    21300012: Spearman-Sprite-01_6
+    21300000: spearman 200x200 new_0
+    21300002: spearman 200x200 new_1
+    21300004: spearman 200x200 new_2
+    21300006: spearman 200x200 new_3
+    21300008: spearman 200x200 new_4
+    21300010: spearman 200x200 new_5
+    21300012: spearman 200x200 new_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,81 +51,81 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Spearman-Sprite-01_0
+    - name: spearman 200x200 new_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 177
-        width: 67
-        height: 72
+        x: 104
+        y: 419
+        width: 134
+        height: 142
       alignment: 9
-      pivot: {x: .507870257, y: .133814499}
+      pivot: {x: .51446718, y: .111471102}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_1
+    - name: spearman 200x200 new_1
       rect:
         serializedVersion: 2
-        x: 277
-        y: 54
-        width: 11
-        height: 226
+        x: 334
+        y: 396
+        width: 152
+        height: 131
+      alignment: 9
+      pivot: {x: .145517245, y: .52419436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spearman 200x200 new_2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 103
+        width: 23
+        height: 450
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_2
+    - name: spearman 200x200 new_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 172
+        width: 114
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spearman 200x200 new_4
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 208
+        width: 90
+        height: 94
+      alignment: 9
+      pivot: {x: .26522252, y: .241495177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spearman 200x200 new_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 125
-        width: 45
-        height: 48
-      alignment: 9
-      pivot: {x: .195333719, y: .25831762}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_3
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 59
-        width: 57
-        height: 92
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_4
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 102
-        width: 78
-        height: 66
-      alignment: 9
-      pivot: {x: .155222386, y: .531957924}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_5
-      rect:
-        serializedVersion: 2
-        x: 41
         y: 0
-        width: 39
-        height: 59
+        width: 76
+        height: 118
       alignment: 9
-      pivot: {x: .540562093, y: .866433442}
+      pivot: {x: .67377162, y: .842832029}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Spearman-Sprite-01_6
+    - name: spearman 200x200 new_6
       rect:
         serializedVersion: 2
-        x: 125
-        y: 12
-        width: 42
-        height: 47
+        x: 244
+        y: 37
+        width: 83
+        height: 93
       alignment: 9
-      pivot: {x: .26145643, y: .802920699}
+      pivot: {x: .275692493, y: .79183042}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

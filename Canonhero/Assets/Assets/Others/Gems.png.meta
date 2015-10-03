@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 20c8fc0073b3213488cf6ed6bd576bd3
-timeCreated: 1443613841
+guid: 959fbc3e4bae4c74c825d33f243c0e57
+timeCreated: 1443873374
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Archer Sprite 200x200_0
-    21300002: Archer Sprite 200x200_1
-    21300004: Archer Sprite 200x200_2
-    21300006: Archer Sprite 200x200_3
-    21300008: Archer Sprite 200x200_4
-    21300010: Archer Sprite 200x200_5
-    21300012: Archer Sprite 200x200_6
-    21300014: Archer Sprite 200x200_7
+    21300000: Gems_3
+    21300002: Gems_15
+    21300004: Gems_17
+    21300006: Gems_22
+    21300008: Gems_34
+    21300010: Gems_41
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,91 +50,71 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Archer Sprite 200x200_0
+    - name: Gems_3
       rect:
         serializedVersion: 2
-        x: 29
-        y: 378
-        width: 142
-        height: 141
-      alignment: 9
-      pivot: {x: .56218648, y: .117274724}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_1
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 235
-        width: 134
-        height: 286
-      alignment: 9
-      pivot: {x: .111926407, y: .520583868}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_2
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 194
-        width: 19
-        height: 226
+        x: 291
+        y: 513
+        width: 54
+        height: 54
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_3
+    - name: Gems_15
       rect:
         serializedVersion: 2
-        x: 81
-        y: 234
-        width: 89
-        height: 87
+        x: 489
+        y: 422
+        width: 52
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_4
+    - name: Gems_17
       rect:
         serializedVersion: 2
-        x: 191
-        y: 169
-        width: 120
-        height: 140
+        x: 627
+        y: 418
+        width: 42
+        height: 52
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_5
+    - name: Gems_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 126
-        width: 109
-        height: 67
-      alignment: 9
-      pivot: {x: .581013858, y: .705019593}
+        x: 362
+        y: 325
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_6
+    - name: Gems_34
       rect:
         serializedVersion: 2
-        x: 115
-        y: 0
-        width: 84
-        height: 129
-      alignment: 9
-      pivot: {x: .67520833, y: .865085542}
+        x: 556
+        y: 227
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Archer Sprite 200x200_7
+    - name: Gems_41
       rect:
         serializedVersion: 2
-        x: 260
-        y: 9
-        width: 106
-        height: 123
-      alignment: 9
-      pivot: {x: .277848721, y: .827055633}
+        x: 426
+        y: 131
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

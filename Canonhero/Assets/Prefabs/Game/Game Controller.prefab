@@ -11,9 +11,12 @@ GameObject:
   - 114: {fileID: 11437478}
   - 114: {fileID: 11416728}
   - 114: {fileID: 11416434}
+  - 114: {fileID: 11440670}
+  - 114: {fileID: 11410008}
+  - 114: {fileID: 11466732}
   m_Layer: 0
   m_Name: Game Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,6 +33,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11410008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47aff316ee87ce7499f8a76f57bc28c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BannerId: ca-app-pub-8561414184067206/5916680170
+  InterstitialId: ca-app-pub-8561414184067206/6209228174
 --- !u!114 &11416434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,18 +57,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b77dc9f834e3214788f8eac72e58fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anim: {fileID: 0}
-  Movement: {fileID: 0}
-  Spawner: {fileID: 11416728}
   MainMenuPanel: {fileID: 0}
   ShopPanel: {fileID: 0}
+  LosePanel: {fileID: 0}
 --- !u!114 &11416728
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d393061466b28246b0c0e06935b62ca, type: 3}
   m_Name: 
@@ -61,7 +75,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 0}
   Interval: 4
   OffsetMin: {x: 0, y: 1}
-  OffsetMax: {x: 0, y: 5}
+  OffsetMax: {x: 0, y: 4}
 --- !u!114 &11437478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,6 +88,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PointsText: {fileID: 0}
+--- !u!114 &11440670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15faa58d56a9c664bbf2eb3e4615a2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11466732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008482e18dfd8bd4e935817830db1c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinText: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
