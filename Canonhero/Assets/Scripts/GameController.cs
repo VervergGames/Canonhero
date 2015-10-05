@@ -9,15 +9,18 @@ public class GameController : Singleton<GameController> {
     public GameObject MainMenuPanel;
     public GameObject ShopPanel;
     public GameObject LosePanel;
+    public Transform ShopCamera;
 
     private GameObject Player;
     private Animator Anim;
     private PlayerMovement Movement;
     private RandomSpawner Spawner;
     private PlayerShooting Shooting;
+    private CameraFollow CamFollow;
 
     private float startTime;
     private GlobalClock _GameClock;
+    private Vector3 MainCameraPosition;
 
     void Awake()
     {
@@ -29,11 +32,13 @@ public class GameController : Singleton<GameController> {
         Anim = Player.GetComponent<Animator>();
         Movement = Player.GetComponent<PlayerMovement>();
         Shooting = Player.GetComponent<PlayerShooting>();
+        CamFollow = Camera.main.GetComponent<CameraFollow>();
         Spawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<RandomSpawner>();
         Anim.enabled = false;
         Movement.enabled = false;
         Spawner.enabled = false;
         _GameClock = Timekeeper.instance.Clock("Game");
+        MainCameraPosition = Camera.main.transform.position;
         //AskForReviewNow();
 	}
 	
@@ -43,6 +48,7 @@ public class GameController : Singleton<GameController> {
 
     public void StartGame()
     {
+        CamFollow.enabled = true;
         MainMenuPanel.SetActive(false);
         Anim.enabled = true;
         Movement.enabled = true;
@@ -72,11 +78,13 @@ public class GameController : Singleton<GameController> {
 
     public void OpenShopPanel()
     {
+        Camera.main.transform.position = ShopCamera.position;
         ShopPanel.SetActive(true);
     }
 
     public void CloseShopPanel()
     {
+        Camera.main.transform.position = MainCameraPosition;
         ShopPanel.SetActive(false);
     }
 

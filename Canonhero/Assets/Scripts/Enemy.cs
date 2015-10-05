@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour {
         {
             _Anim.SetTrigger("Dead");
             GamePoints.Instance.AddPoints(1);
+            _PlayerShooting.Bodyshot();
             Debug.Log("NormalShooted");
             Dead();
         }

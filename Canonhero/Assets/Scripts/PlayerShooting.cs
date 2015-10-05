@@ -110,4 +110,9 @@ public class PlayerShooting : MonoBehaviour {
             UltimateCount = 0;
         }
     }
+
+    public void Bodyshot()
+    {
+        UltimateCount = 0;
+    }
 }
