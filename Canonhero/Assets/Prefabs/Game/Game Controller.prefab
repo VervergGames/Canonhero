@@ -14,6 +14,8 @@ GameObject:
   - 114: {fileID: 11440670}
   - 114: {fileID: 11410008}
   - 114: {fileID: 11466732}
+  - 114: {fileID: 11490608}
+  - 114: {fileID: 11486066}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: GameController
@@ -39,7 +41,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47aff316ee87ce7499f8a76f57bc28c6, type: 3}
   m_Name: 
@@ -57,9 +59,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b77dc9f834e3214788f8eac72e58fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scores: {fileID: 0}
   MainMenuPanel: {fileID: 0}
   ShopPanel: {fileID: 0}
   LosePanel: {fileID: 0}
+  ShopCamera: {fileID: 0}
 --- !u!114 &11416728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +98,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15faa58d56a9c664bbf2eb3e4615a2d3, type: 3}
   m_Name: 
@@ -110,7 +114,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008482e18dfd8bd4e935817830db1c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins:
+  - {fileID: 188430, guid: 94ce2fd98cc7adf409d57c02a1988587, type: 2}
   CoinText: {fileID: 0}
+--- !u!114 &11486066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ff7d92c41e7554d87899aeac4fa035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11490608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32673dba0e9c28540b072f3e61555e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heroes:
+  - HeroName: Spearman
+    Preview: {fileID: 146510, guid: bd2889c4764e47e41ab409a2862f2a7b, type: 2}
+    Player: {fileID: 136290, guid: c5b9a81124806b744970cfa3656db27e, type: 2}
+  - HeroName: Archer
+    Preview: {fileID: 177662, guid: e3211c5a7cad67347ac896dcf4c506e0, type: 2}
+    Player: {fileID: 181818, guid: 13c529c475c79c24eb9ba5cda5132123, type: 2}
+  - HeroName: Wizard
+    Preview: {fileID: 177662, guid: e3211c5a7cad67347ac896dcf4c506e0, type: 2}
+    Player: {fileID: 181818, guid: 13c529c475c79c24eb9ba5cda5132123, type: 2}
+  - HeroName: Telkom Students
+    Preview: {fileID: 146510, guid: bd2889c4764e47e41ab409a2862f2a7b, type: 2}
+    Player: {fileID: 136290, guid: c5b9a81124806b744970cfa3656db27e, type: 2}
+  CharPreview: {fileID: 0}
+  HeroPos: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

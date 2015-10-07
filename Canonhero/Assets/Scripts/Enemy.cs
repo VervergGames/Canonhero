@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour {
 
     public GameObject EnemyAttack;
     public Transform AttackPoint;
+    public Transform ExploisonPoint;
 
     private Animator _Anim;
     private Rigidbody2D _Rb2d;
@@ -26,9 +27,9 @@ public class Enemy : MonoBehaviour {
 
     void Dead()
     {
-        GameCoins.Instance.AddCoin(1);
         _IsDead = true;
-        _Rb2d.AddForceAtPosition(Vector2.up *  200.0f, transform.position);
+        AddExplosionForce(_Rb2d, 300.0f, ExploisonPoint.position, 5.0f);
+        //_Rb2d.AddForce(new Vector2(0.5f, 0.5f) * 100.0f);
         _Rb2d.gravityScale = 1.0f;
         _PlayerShooting.Reload();
     }
@@ -39,6 +40,7 @@ public class Enemy : MonoBehaviour {
         {
             _Anim.SetTrigger("Dead");
             GamePoints.Instance.AddPoints(2);
+            GameCoins.Instance.SpawnCoin(transform, "Normal");
             _PlayerShooting.Headshot();
             Debug.Log("WeakShooted");
             Dead();
@@ -51,6 +53,7 @@ public class Enemy : MonoBehaviour {
         {
             _Anim.SetTrigger("Dead");
             GamePoints.Instance.AddPoints(1);
+            GameCoins.Instance.SpawnCoin(transform, "Normal");
             _PlayerShooting.Bodyshot();
             Debug.Log("NormalShooted");
             Dead();
@@ -63,7 +66,7 @@ public class Enemy : MonoBehaviour {
         {
             _Anim.SetTrigger("Dead");
             GamePoints.Instance.AddPoints(5);
-            GameCoins.Instance.AddCoin(5);
+            GameCoins.Instance.SpawnCoin(transform, "Ultimate");
         }
     }
 
@@ -78,5 +81,16 @@ public class Enemy : MonoBehaviour {
         {
             Attack();
         }
+    }
+
+    void AddExplosionForce(Rigidbody2D body, float expForce, Vector3 expPosition, float expRadius)
+    {
+        var dir = (body.transform.position - expPosition);
+        float calc = 1 - (dir.magnitude / expRadius);
+        if (calc <= 0)
+        {
+            calc = 0;
+        }
+        body.AddForce(dir.normalized * expForce * calc);
     }
 }

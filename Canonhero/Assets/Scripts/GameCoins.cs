@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameCoins : Singleton<GameCoins> {
 
+    public GameObject[] coins;
     public Text CoinText;
     private int CurrentCoins;
 
@@ -29,7 +30,24 @@ public class GameCoins : Singleton<GameCoins> {
     public void AddCoin(int value)
     {
         CurrentCoins += value;
+        PlayerPrefs.SetInt("Coins", CurrentCoins);
         UpdateCoinText();
+    }
+
+    public void SpawnCoin(Transform pos, string type)
+    {
+        if(type == "Normal")
+        {
+            Instantiate(coins[0], pos.position, pos.rotation);
+        }
+        else
+        {
+            for(int i = 0; i < 5; i++)
+            {
+                int j = Random.Range(0, coins.Length);
+                Instantiate(coins[j], pos.position, pos.rotation);
+            }
+        }
     }
 
     void UpdateCoinText()

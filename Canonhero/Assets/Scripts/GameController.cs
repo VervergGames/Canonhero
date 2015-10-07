@@ -5,7 +5,7 @@ using Chronos;
 
 public class GameController : Singleton<GameController> {
 
-    
+    public GameObject Scores;
     public GameObject MainMenuPanel;
     public GameObject ShopPanel;
     public GameObject LosePanel;
@@ -19,7 +19,6 @@ public class GameController : Singleton<GameController> {
     private CameraFollow CamFollow;
 
     private float startTime;
-    private GlobalClock _GameClock;
     private Vector3 MainCameraPosition;
 
     void Awake()
@@ -28,23 +27,27 @@ public class GameController : Singleton<GameController> {
     }
 
     void Start () {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        Anim = Player.GetComponent<Animator>();
-        Movement = Player.GetComponent<PlayerMovement>();
-        Shooting = Player.GetComponent<PlayerShooting>();
         CamFollow = Camera.main.GetComponent<CameraFollow>();
         Spawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<RandomSpawner>();
-        Anim.enabled = false;
-        Movement.enabled = false;
-        Spawner.enabled = false;
-        _GameClock = Timekeeper.instance.Clock("Game");
         MainCameraPosition = Camera.main.transform.position;
+        Scores.SetActive(false);
         //AskForReviewNow();
 	}
 	
 	void Update () {
 
 	}
+
+    public void UpdatePlayer()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+        Anim = Player.GetComponent<Animator>();
+        Movement = Player.GetComponent<PlayerMovement>();
+        Shooting = Player.GetComponent<PlayerShooting>();
+        Anim.enabled = false;
+        Movement.enabled = false;
+        Spawner.enabled = false;
+    }
 
     public void StartGame()
     {
@@ -53,7 +56,7 @@ public class GameController : Singleton<GameController> {
         Anim.enabled = true;
         Movement.enabled = true;
         Spawner.enabled = true;
-        _GameClock.LerpTimeScale(3, 60.0f);
+        Scores.SetActive(true);
     }
 
     public void StopSpawning()
@@ -80,12 +83,14 @@ public class GameController : Singleton<GameController> {
     {
         Camera.main.transform.position = ShopCamera.position;
         ShopPanel.SetActive(true);
+        MainMenuPanel.SetActive(false);
     }
 
     public void CloseShopPanel()
     {
         Camera.main.transform.position = MainCameraPosition;
         ShopPanel.SetActive(false);
+        MainMenuPanel.SetActive(true);
     }
 
     public void OpenLosePanel()
